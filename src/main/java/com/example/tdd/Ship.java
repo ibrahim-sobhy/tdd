@@ -1,5 +1,7 @@
 package com.example.tdd;
 
+import com.example.tdd.model.ShipModel;
+
 import java.util.Objects;
 import java.util.Optional;
 
@@ -54,5 +56,13 @@ public class Ship {
       throw new IllegalArgumentException("ShipId is invalid");
 
     return Optional.ofNullable(emergencyAgency.sos(shipId));
+  }
+
+  public Optional<ShipModel> find(String shipId) {
+    throw new UnsupportedOperationException();
+  }
+
+  public ShipModel add(ShipModel expectedShip) {
+    throw new UnsupportedOperationException();
   }
 }
